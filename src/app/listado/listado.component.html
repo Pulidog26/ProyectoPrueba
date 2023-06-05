@@ -1,0 +1,10 @@
+<p>listado works!</p>
+
+{{variable.id}}
+{{variable.name}}
+{{variable.abilities | json }}
+<div *ngFor="let habilidad of variable.abilities">
+    {{ habilidad.is_hidden}}
+    {{ habilidad.ability.name}}
+    {{ habilidad.slot}}
+</div>
